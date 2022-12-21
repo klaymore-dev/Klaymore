@@ -157,4 +157,5 @@ await tx.wait();
 
 ## Contract addesses
 
-TBD
+- HouseGovernanceV2: `0x3c689d2E0700603F85db7ce41Ba2e5835912a9b5`
+- Executor: `0x0448098Acf15eAE180e512Fe085f1D7800De2B73`
