@@ -76,6 +76,10 @@ const callData = await gov.interface.encodeFunctionData("setVotingDelay", [
   BigNumber.from("400"),
 ]);
 
+// approve downPayment(1,000,000 HOUSE)
+const approveTx = await token.approve(gov.address, "10000000000000000000");
+await approveTx.wait();
+
 //Creating first proposal: Changing delay to 300 via no sig + calldata
 const tx = await gov.create(
   executor.address,
